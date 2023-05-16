@@ -1,0 +1,153 @@
+:root{
+    --box-height: 260px;
+    --box-width: 170px;
+}
+#docMain{
+    box-sizing: border-box;
+    padding: 4%;
+    height: 100%;
+    width: 100%;
+}
+#addDoc{
+    height: var(--box-height);
+    width: var(--box-width);
+    border-style: solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 2%;
+    border-width: 0.1px;
+}
+#docsContainer{
+    height: 100%;
+    box-sizing: border-box;
+    margin-top: 4%;
+    width: 90%;
+    margin-left: 8%;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 10%;
+}
+#docName{
+    height: var(--box-height);
+    width: var(--box-width);
+    border-style: solid;
+    border-radius: 10px;   
+    box-sizing: border-box;
+    padding: 1.6%;
+    margin-top: 16%;
+    border-width: 0.1px;
+}
+#addWrapper{
+    width: 90%;
+    margin-left: 8%;
+    display: flex;
+    margin-top: -1%;
+}
+#addImg{
+    width: 60%;
+    margin-left: 16%;
+    margin-top: 50%;
+}
+#addImg:hover{
+    transform: scale(1.08);
+}
+#docImg{
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 20%;
+}
+#docLink{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 6%;
+}
+#inpWrapper{
+    width: 120%;
+    height: 40%;
+    box-sizing: border-box;
+    padding: 2%;
+    margin-left: -10%;
+}
+#docInp{
+    width: 90%;
+}
+#addBtn{
+    border-style: solid;  
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+    top: 20%;
+    border-radius: 8px;
+    color: white;
+    background-color: dodgerblue;
+}
+#addBtn:hover{
+    color: dodgerblue;
+    background-color: white; 
+}
+#addBtn:hover{
+    opacity: .54;
+}
+#docDisplay{
+    display: flex;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 8%;
+    box-shadow: 1px 2px 4px 1px rgb(0,0, 0, 0.3);
+}
+#docDescImg{
+    width: 60%;
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+#docDesc{
+    width: 40%;
+    box-sizing: border-box;
+    padding: 4%;
+    font-family: var(--mont);
+}   
+@media only screen and (max-width: 780px) {
+    :root{
+        --box-height: 160px;
+        --box-width: 110px;
+    }
+    #docsContainer{
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        margin-bottom: 40%;
+    }
+    #docName{
+        margin-bottom: 4%;
+    }
+    #addWrapper{
+        margin-top: 16%;
+        display: block;
+    }
+    #inpWrapper{
+        width: 80%;
+    }
+    #addBtn{
+        padding: 0.1px;
+    }
+    #addImg{
+        margin-top: 40%;
+    }
+    #docDisplay {
+        border-radius: 10px;
+        width: 70%;
+        margin-left: 8%;
+        box-shadow: 1px 2px 4px 1px rgb(0, 0, 0, 0.3);
+        display: block;
+        margin-top: 10%;
+    }
+    #docDesc {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4%;
+        font-family: var(--mont);
+    }
+    #docDesc p{
+        font-size: 1rem;
+    }
+}

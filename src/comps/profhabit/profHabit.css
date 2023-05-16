@@ -1,0 +1,38 @@
+#habitCard1{
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 4px 2px rgb(0, 0, 0, 0.4);
+    display: flex;
+    margin-top: 4.2%;
+    margin-left: 1%;
+}
+#habImg1 {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    z-index: 5;
+    padding-left: 66%;
+    margin-top: -18%;
+}
+#habitName1 h3 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    margin-left: 4%;
+}
+@media only screen and (max-width: 780px) {
+    #habitCard1 {
+        width: 140px;
+        height: 120px;
+    }
+    #habImg1 {
+        height: 60px;
+        width: 60px;
+        position: relative;
+        z-index: 5;
+        padding-left: 46%;
+        margin-top: -18%;
+    }
+}

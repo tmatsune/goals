@@ -1,0 +1,28 @@
+
+
+#mainTimer{
+    height: 60px;
+    width: 180px;
+    position: absolute;
+    left: 20%;
+    top: 3%;
+}
+#t{
+    margin-left: 2%;
+}
+#mainTimerWrapper{
+    display: flex;
+    line-height: 2px;
+}
+#timerBtn{
+    border-color: none;
+    border-width: 0.4px;
+    margin-left: 2.8%;
+    color: white;
+    padding: 6px;
+}
+@media only screen and (max-width:780px) {
+    #mainTimer{
+        margin-left: 30%;
+    }
+}

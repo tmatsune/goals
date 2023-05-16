@@ -1,0 +1,254 @@
+:root{
+    --dodger-blue: rgb(30, 144, 255);
+    --light-green: rgb(144, 238, 144);
+    --white: rgb(255, 255, 255);
+    --poppin: 'Poppins', sans-serif;
+    --mont : 'Montserrat', sans-serif;
+    --grey : rgb(105, 105, 105);
+    --wix : 'Wix Madefor Display', sans-serif;
+}
+
+#homeMain{
+    box-sizing: border-box;
+    padding: 2%;
+    height: 100%;
+}
+#homeMain h1{
+    font-family: var(--poppin);
+    font-size: 3.8rem;
+}
+#titleP{
+    font-weight: 900;
+    font-family: var(--wix);
+    font-size: .6rem;
+    color: var(--grey);
+    font-size: 2.4;
+}
+#homeContainer{
+    position: relative;
+    z-index: 2;
+    margin-left: 6%;
+    margin-top: 24%;
+}
+#homeWrapper{
+    position: relative;
+    line-height: 18px;
+    width: 100%;
+}
+
+#getStarted{
+    border-style: solid;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background-color: var(--dodger-blue, --light-green);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+    font-family: var(--poppin);
+}
+#getStarted:is(:hover, :focus) {
+    background: var(--white);
+    color: var(--dodger-blue)
+}
+
+#study{
+    height: 200px;
+    width: 300px;
+    width: 98%;
+    z-index: 4;
+}
+/*-------Section 2------*/
+#homeContainer2{
+    box-sizing: border-box;
+    padding: 4%;
+}
+#homeCard{
+    height: 160px;
+    width: 260px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px 1px rgb(0, 0, 0, 0.4);
+    margin-top: 10%;
+    margin-left: 12%;
+}
+#cardImg1{
+    height: 70%;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    background-position: center;
+}
+#cardStat{
+    margin-left: 6%;
+    height: 30%;
+}
+#pDesc{
+    font-size: .8rem;
+    margin-top: 4%;
+}
+#homeContainer3{
+    box-sizing: border-box;
+    padding: 4%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#img3{
+    width: 50%;
+}
+#curve{
+    z-index: 2;
+    height: 280px;
+    width: 800px;
+    background-color: dodgerblue;
+    position: absolute;
+    margin-top: 9.6%;
+    margin-left: 38%;
+}
+#custom{
+    margin-top: 24%;
+    line-height: 12px;
+    margin-left: 4%;
+    z-index: 3;
+    position: relative;
+}
+#custom p {
+    font-size: .72rem;
+    position: relative;
+    z-index: 3;
+}
+#custom h3{
+    font-family: var(--poppin);
+    position: relative;
+    z-index: 3;
+    margin-top: 20%;
+}
+#sprite2 {
+    height: 32px;
+    background-size: cover;
+    margin-top: 0px;
+    width: calc(196px / 6);
+    animation: walk .8s steps(6) infinite;
+    transform: scale(2.8);
+    margin-top: 68px;
+    margin-left: 42px;
+}
+@keyframes walk {
+    from {
+        background-position: 192px 0;
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}
+#profileImages{
+    box-sizing: border-box;
+    width: 50%;
+    height: 400px;
+    box-shadow: 1px 2px 4px 2px rgb(0, 0, 0, 0.4);
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 6%;
+    position: relative;
+    z-index: 3;
+}
+
+/*-------responsive------*/
+
+@media only screen and (min-width: 768px){
+    #homeContainer{
+        display: flex;
+        margin-top: 10%;
+    }
+    #homeWrapper::after {
+        content: '';
+        position: absolute;
+        height: 560px;
+        width: 580px;
+        background-color: dodgerblue;
+        transform: translate(74.8%, -56%);
+        z-index: 2;
+        border-radius: 90% 74% 98% 60%;
+    }
+    #study {
+        height: 640px;
+        width: 540px;
+        position: relative;
+        top: -20%;
+        right: 10%;
+    }
+    #homeMain h1 {
+        font-size: 5rem;
+    }
+    #titleP{
+        font-size: 1.6rem;
+    }
+    #homeWrapper{
+        position: relative;
+        line-height: 28px;
+        width: 100%;
+    }
+    #getStarted{
+        border-style: solid;
+        padding: 10px 30px;
+    }
+    #homeContainer2 {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        box-sizing: border-box;
+        padding: 4%;
+    }
+    #homeContainer2::before{
+        content: '';
+        position: absolute;
+        height: 60%;
+        width: 100%;
+        display: block;
+        background-color: rgb(44, 132, 255);
+        transform: translate(-5.8% , -36%);
+    }
+    #homeCard{
+        z-index: 1;
+        height: 300px;
+        width: 340px;
+        margin-top: -18%;
+        background-color: white;
+        color: black;
+    }
+    #cardStat{
+        margin-left: 4%;
+    }
+    #pDesc{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    #curve{
+        margin-left: 46%;
+    }
+    #custom{
+        font-size: 2rem;
+        line-height: 42px;
+        margin-left: 4%;
+        margin-top: 4%;
+        left: 4%;
+    }
+    #custom p {
+        font-size: 1.6rem;
+        font-family: var(--wix);
+    }
+    #profileImages{
+        box-sizing: border-box;
+        display: flex;
+        width: 50%;
+        height: 400px;
+        box-shadow: 1px 2px 4px 2px rgb(0, 0, 0, 0.4);
+        border-radius: 10px 10px 10px 10px;
+    }
+    #sprite2{
+        margin-left: 114px;
+        margin-top: 150px;
+        transform: scale(3.2);
+    }
+
+}

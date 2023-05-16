@@ -1,0 +1,23 @@
+
+#studyCanvas{
+    width: 28%;
+    height: 60%;
+    margin-top: 4%;
+}
+#btns{
+    display: flex;
+    margin-left: 56%;
+}
+#start{ 
+    border-radius: 6px;
+    border-style: solid;
+    padding: 4px 30px 4px 30px;
+    color: white;
+    cursor: pointer;
+}
+#start:hover{
+    opacity: .68;
+}
+@media only screen and (max-width: 780px) {
+    
+}

@@ -1,0 +1,192 @@
+:root{
+    --title-margin: 8%;
+}
+#trackerMain{
+    box-sizing: border-box;
+    padding: 4%;
+    height: 100%;
+    width: 100%;
+    margin-top: -1.2%;
+}
+#trackerContainer {
+    display: flex;
+}
+#goalH1{
+    margin-top: 28%;
+    font-family: var(--mont);
+}
+#calendarWrapper{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 100%;
+    line-height: 1px;
+    margin-left: 2%;
+    width: 100%;
+}
+#edit{
+    width: 60px;
+    cursor: pointer;
+    position: absolute;
+    left: 26%;
+    margin-top: -2%;
+}
+#edit:hover{
+    opacity: 0.6;
+}
+#editpopup {
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 4%;
+}
+#editpopup button{
+    background-color: dodgerblue;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+}
+#editpopup button:hover{
+    color: dodgerblue;
+    background-color: white;
+    border-color: dodgerblue;
+}       
+#titleWrapper{
+    height: 280px;
+    width: 340px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 1px 4px 6px 1px rgb(0, 0, 0, 0.4);
+    margin-left: 4.2%;
+}
+#cardImg {
+    height: 64%;
+    background-size: cover;
+    border-radius: 9px 9px 0px 0px;
+    margin-bottom: -2%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#cardText{
+    display: flex;
+    box-sizing: border-box;
+    padding: 2%;
+    padding-left: 10%;
+    line-height: 8px;
+}
+#currDate{
+    height: 280px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 1px 4px 6px 1px rgb(0, 0, 0, 0.4);
+    margin-left: 4%;
+}
+#currDateImg{
+    height: 64%;
+    border-radius: 10px 10px 0px 0px;
+    background-size: cover;
+}
+#currDate h1{
+    font-size: 2.82rem;
+    font-weight: 700;
+    margin-top: -6%;
+}
+#dateDiv{
+    margin-left: 14%;
+}
+#ins{
+    border-style: solid;
+    font-size: 1rem;
+    position: relative;
+    margin-left: 4%;
+    top: 4%;
+    padding: 2px 8px;
+    border-radius: 6px;
+    color: white;
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+#ins:hover{
+    color: dodgerblue;
+    background-color: white;
+}
+#instrucDiv{
+    box-sizing: border-box;
+    padding: 1.6%;
+    padding-left: 4.6%;
+    transition: .6s ease-in;   
+    font-size: .9rem; 
+    font-family: var(--mont);
+}
+#scroll{ 
+    display: none;
+}
+
+@media only screen and (max-width: 780px) {
+    #trackerMain{
+        margin-top: 0%;
+    }
+    #trackerContainer{
+        display: block;
+    }
+    #titleWrapper{
+        margin-top: 14%;
+        margin-left: var(--title-margin);
+        width: 290px;
+    }
+    #currDate {
+        margin-left: var(--title-margin);   
+    }
+    #calImg {
+        margin-left: var(--title-margin);
+    }
+    #titleWrapper h1{
+        font-size: 1rem;
+    }
+    #currDate{
+        font-size: 1rem;
+    }
+    #calImg{
+        width: 66%;
+    }
+     #calendarWrapper{
+        display: block;
+        margin-left: 12%;
+        margin-bottom: 10%;
+    }
+    #edit{
+        left: 62%;
+        margin-top: -6%;
+        width: 50px;
+    }
+    #editpopup input{
+        width: 80%;
+        margin-top: 10%;
+    }
+    #editpopup{
+        margin-left: 34%;
+        margin-top: 18%;
+    }
+    #currDate{
+        margin-top: 10%;
+        width: 290px;
+    }
+    #currDate h1{
+        font-size: 2.22rem;
+        font-weight: 700;
+        margin-top: -6%;
+    }
+    #scroll{
+        display: block;
+        position: sticky;
+        border-radius: 50%;
+        border-style: none;
+        height: 50px;
+        width: 50px;
+        background: var(--og);
+        color: white;
+        
+    }
+
+}

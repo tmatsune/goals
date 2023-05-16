@@ -1,0 +1,223 @@
+:root{
+
+}
+#studyMain{
+    margin-top: -1%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 2%;
+    width: 100%;
+    display: flex;
+}
+#dropdown{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 120px;
+    width: 100px;
+    border-style: solid;
+    background-color: rgb(250, 249, 249);
+    color: black;
+    border-radius: 2px;
+    border-width: 0.1px;
+    box-sizing: border-box;
+    padding: .4%;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: -3.6%;
+    margin-left: -.2%;
+}
+#time:hover #dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+
+#inpTime{
+    width: 60%;
+    margin-left: 10%;
+}
+#timeOptions{
+    cursor: pointer;
+    text-align: center;
+}
+#timeOptions:hover{
+    color: white;
+    background-color: black;
+}
+#time {
+    margin-left: 1.4%;
+    margin-top: 6%;
+}
+#timerWrapper{
+    margin-top: 4%;
+    width: 30%;
+    height: 50%;
+    margin-left: 2%;
+}
+#timer {
+    width: 100%;
+    height: 64%;
+    margin-left: 2%;
+    border-radius: 12px;
+    box-shadow: 1px 3px 6px 2px rgb(0, 0, 0, 0.3);
+}
+#hour{
+    cursor: pointer;
+    font-size: 4rem;
+    font-weight: 800;
+}
+#test{
+    margin-left: 10%;
+    display: flex;
+    margin-top: 8%;
+}
+#btnWrapper{
+    margin-left: 14%;
+    margin-top: 8%;
+}
+#startBtn{
+    border-radius: 6px;
+    border-style: solid;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-bottom: -8%;
+    margin-left: 2%;
+    background-color: rgba(50, 205, 50);
+    color: white;
+}
+#startBtn:hover{
+    background-color: white;
+    color: rgba(50, 205, 50);
+}
+#startBtn1 {
+    border-radius: 6px;
+    border-style: solid;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-bottom: -8%;
+    margin-left: 2%;
+    background-color: rgba(255, 49, 71);
+    color: white;
+}
+#startBtn1:hover {
+    background-color: white;
+    color: rgba(255, 49, 71);
+}
+
+#quillWrapper{
+    height: 94%;
+    width: 64%;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+#quillWrapper2{
+    height: 94%;
+    width: 84%;
+    margin-left: 4%; 
+}
+#quill{
+    margin-top: 2%;
+    height: 98%;
+
+}
+#studyCanvasContainer{
+    margin-left: 9%;
+    margin-top: 8%;
+}
+#breakBtn{
+    border-style: solid;
+    border-radius: 6px;
+    padding: 4px 12px 4px 12px;
+    cursor: pointer;
+    color: white;
+    display: inline;
+    background-color: rgb(30, 144, 255);
+}
+#breakBtn:hover{  
+    color: rgb(30, 144, 255);
+    background-color: white;
+}
+#saveBtn{
+    border-style: solid;
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin-bottom: 8%;
+    cursor: pointer;
+    background-color: rgb(30, 144, 255);
+    color: white;
+}
+#saveBtn:hover{
+    color: rgb(30, 144, 255);
+    background-color: white;
+}
+
+@media only screen and (max-width: 780px) {
+    #studyMain{
+        display: block;
+    }
+    #timerWrapper{
+        width:90%;
+        height: 20%;
+        margin-top: 22%;
+    }
+    #hour{
+        font-size: 2.6rem;
+    }
+    #time {
+        margin-top: -8%;
+    }
+    #startBtn{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        cursor: pointer;
+        margin-bottom: 2%;
+        margin-left: 8%;
+    }
+    #startBtn1{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        cursor: pointer;
+        margin-bottom: 2%;
+        margin-left: 8%;
+    }
+    #test{
+        margin-left: 14%;
+        margin-top: -8.2%;
+    }
+    #btnWrapper{
+        margin-top: 6%;
+        margin-left: 13.4%;
+    }
+    #quillWrapper{
+        margin-top: 6.8%;
+        width: 90%;
+        height: 46%;
+        margin-bottom: 2%;
+    }
+    #quillWrapper2{
+        width: 90%;
+    }
+    #dropdown{
+        height: 100px;
+        width: 90px;
+        margin-top: -10%;
+        margin-left: -4%;
+    }
+    #breakBtn{
+        display: none;
+    }
+    #saveBtn{
+        border-width:  0.8px;
+        padding: 2px 8px;
+    }
+}

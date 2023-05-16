@@ -1,0 +1,22 @@
+
+#month{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    line-height: 1px;
+    height: 160px;
+    width: 180px;
+    box-sizing: border-box;
+    padding-left: 4%;
+}
+#monthTitle{
+    margin-left: 6%;
+    font-family: var(--poppin);
+}
+@media only screen and (max-width: 780px) {
+    #month{
+        height: 210px;
+        width: 240px;
+    }
+}
+

@@ -1,0 +1,94 @@
+
+#loginMain{
+    box-sizing: border-box;
+    padding: 2%;
+    height: 100vh;
+}
+#logWrapper {
+    display: flex;
+    box-sizing: border-box;
+    height: 90%;
+    padding: 1%;
+    padding-top: 10%;
+    text-align: center;
+}
+#logWrapper input{
+    padding: 3%;
+    border-width: 0.4px;
+    margin-top: 2%;
+    width: 80%;
+}
+#login{
+    height: 70%;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 1%;
+    box-shadow: 1px 2px 4px 2px rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin-left: 50%;
+    border-width: 0.1px;
+    position: relative;
+    z-index: 3;
+}
+#login p {
+    cursor: pointer;
+}
+
+#loginBtn{
+    padding: 2%;
+    border-width: 0.1px;
+    margin-top: 2.4%;
+    background-color: dodgerblue;
+    color: white;
+    border-color: white;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+#loginBtn:hover{
+    color: dodgerblue;
+    background-color: white;
+    border-color: dodgerblue;
+}
+#backBtn{
+    padding: 2%;
+    border-width: 0.1px;
+    margin-top: 2.4%;
+    background-color: rgb(178, 178, 178);
+    color: white;
+    border-color: white;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+#backBtn:hover{
+    color: rgb(178, 178, 178);
+    background-color: white;
+}
+#signUp{
+    color: dodgerblue;
+}
+#logImg{
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 3%;
+    z-index: 2;
+    height: 500px;
+    width: 500px;
+}
+@media only screen and (max-width: 780px) {
+    #logMain{
+        padding: 0%;
+    }
+    #login{
+        width: 80%;
+        margin-left: 10%;
+        height: 80%;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+    #logImg{
+        width: 36%;
+        margin-left: 6%;
+        margin-top: 40%;
+    }
+
+}
