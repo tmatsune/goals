@@ -17,6 +17,16 @@
     font-family: var(--poppin);
     font-size: 3.8rem;
 }
+    #bgimage{
+        background-position: center;
+        background-size: cover;
+        height: 140px;
+        position: absolute;
+        width: 360px;
+        margin-left: -4%;
+        margin-top: -8%;
+        z-index: 3;
+    }
 #titleP{
     font-weight: 900;
     font-family: var(--wix);
@@ -27,8 +37,11 @@
 #homeContainer{
     position: relative;
     z-index: 2;
-    margin-left: 6%;
-    margin-top: 24%;
+    text-align: center;
+    height: 260px;
+    width: 94%;
+    margin-bottom: 1%;
+    margin-left: 4%;
 }
 #homeWrapper{
     position: relative;
@@ -45,6 +58,8 @@
     cursor: pointer;
     font-weight: 600;
     font-family: var(--poppin);
+    position: relative;
+    z-index: 4;
 }
 #getStarted:is(:hover, :focus) {
     background: var(--white);
@@ -116,6 +131,7 @@
     font-size: .72rem;
     position: relative;
     z-index: 3;
+    
 }
 #custom h3{
     font-family: var(--poppin);
@@ -157,18 +173,21 @@
 
 @media only screen and (min-width: 768px){
     #homeContainer{
-        display: flex;
-        margin-top: 10%;
+        text-align: center;
+        margin-bottom: 14%;
+        height: 400px;
+        background-position: center;
+        line-height: 40px;
     }
-    #homeWrapper::after {
-        content: '';
+    #bgimage{
+        background-position: center;
+        background-size: cover;
+        height: 300px;
         position: absolute;
-        height: 560px;
-        width: 580px;
-        background-color: dodgerblue;
-        transform: translate(74.8%, -56%);
-        z-index: 2;
-        border-radius: 90% 74% 98% 60%;
+        width: 880px;
+        margin-left: 12%;
+        margin-top: -8%;
+        z-index: 3;
     }
     #study {
         height: 640px;
@@ -178,10 +197,12 @@
         right: 10%;
     }
     #homeMain h1 {
-        font-size: 5rem;
+        font-size: 5.4rem;
     }
     #titleP{
         font-size: 1.6rem;
+        position: relative;
+        z-index: 4;
     }
     #homeWrapper{
         position: relative;
@@ -250,5 +271,6 @@
         margin-top: 150px;
         transform: scale(3.2);
     }
+
 
 }

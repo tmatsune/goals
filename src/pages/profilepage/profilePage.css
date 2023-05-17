@@ -1,7 +1,8 @@
 #profileMain{
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
     padding: 1%;
+    margin-bottom: 6%;
 }
 #spriteWrapper{
     box-sizing: border-box;
@@ -151,6 +152,7 @@
 @media only screen and (max-width: 780px) {
     #profileDetails {
         display: inline;
+        margin-bottom: 4%;
     }
     #profileMain{
         margin-bottom: 110%;
@@ -158,11 +160,11 @@
     #profCard{
         width: 90%;
         height: 90%;
-        margin-bottom: 10%;
+        margin-bottom: 4%;
     }
     #profCard1{
         width: 99%;
-        margin-bottom: 10%;
+        margin-bottom: 4%;
     }
     #profCardProp0 {
         grid-template-columns: repeat(2, 1fr);
