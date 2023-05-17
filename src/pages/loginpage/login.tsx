@@ -31,10 +31,12 @@ function LoginPage(){
             body: JSON.stringify(userInput)
         }).then(res => res.json());
         console.log(res)
-        setCurrentUser(res);
         reset();
-        if(res){
+        if(Object.keys(res).length > 1){
             navigate("/profile")
+            setCurrentUser(res);
+        }else{
+            alert("wrong username or password")
         }
         
     }
