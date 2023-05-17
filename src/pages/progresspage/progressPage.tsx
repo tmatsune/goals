@@ -50,7 +50,7 @@ function Progress(){
     const getHabits = async() => {
         if(currentUser){
             setLoading(true)
-            const url = `http://localhost:8080/v1/habit/getAllHabits/${currentUser.id}`;
+            const url = `https://gin-production-3fb4.up.railway.app/v1/habit/getAllHabits/${currentUser.id}`;
             const res = await fetch(url, {
                 method: "get",
                 headers: {
@@ -70,7 +70,7 @@ function Progress(){
                 habitdata: habitData,
                 user_id: currentUser.id
             }
-            const url = "http://localhost:8080/v1/habit/createHabit";
+            const url = "https://gin-production-3fb4.up.railway.app/v1/habit/createHabit";
             const res = await fetch(url, {
                 method: "post",
                 headers: { 

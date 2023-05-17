@@ -34,10 +34,17 @@ function TrackerPage(){
     const [show, setShow] = useState(false);
     const [date, setDate] = useState<number[]>([])
     const [insruc, setInstruc] = useState<boolean>(false);
+    useEffect(() => {
+        if(currentUser){
+            if(currentUser.goaltime === 0){
+                alert("current goal time is set to 0, go to profile to change your goal")
+            }
+        }
+    }, [currentUser])
 
     const getTracker = async() => {
         setLoading(true);
-        const url = `http://localhost:8080/v1/goal/getGoalTracker/${currentUser?.id}`;
+        const url = `https://gin-production-3fb4.up.railway.app/v1/goal/getGoalTracker/${currentUser?.id}`;
         const res = await fetch(url, {
             method: "get",
             headers: {
@@ -143,7 +150,7 @@ function EditPopUp(){
     }
 
     const upDbGoal = async() => {
-        const url = "http://localhost:8080/v1/goal/changeGoal";
+        const url = "https://gin-production-3fb4.up.railway.app/v1/goal/changeGoal";
         const res = await fetch(url, {
             method:"post",
             headers:{

@@ -54,7 +54,7 @@ function StudyPage(){
     }, [time, start])
 
     const getOneDoc = async() => {
-        const url = "http://localhost:8080/v1/docs/getOneDoc"
+        const url = "https://gin-production-3fb4.up.railway.app/v1/docs/getOneDoc"
         setLoading(true);
         const res = await fetch(url, {
             method: "post",
@@ -73,7 +73,7 @@ function StudyPage(){
         setDocData(res.docdata)
     }
     const saveData = async() => {
-        const url = "http://localhost:8080/v1/docs/updateUserDoc"
+        const url = "https://gin-production-3fb4.up.railway.app/v1/docs/updateUserDoc"
         if(docData === "" || docData === " "){
             setDocData("example");
         }   

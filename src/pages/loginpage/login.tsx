@@ -18,7 +18,7 @@ function LoginPage(){
     }
 
     const logInHandler = async() => {
-        const url = "http://localhost:8080/v1/user/login";
+        const url = "https://gin-production-3fb4.up.railway.app/v1/user/login";
         const userInput = {
             email: email,
             password: pass
@@ -33,7 +33,10 @@ function LoginPage(){
         console.log(res)
         setCurrentUser(res);
         reset();
-        navigate("/profile")
+        if(res){
+            navigate("/profile")
+        }
+        
     }
     const toggle = () => {
         setShow(!show)
@@ -51,7 +54,7 @@ function LoginPage(){
                     <input value={email} placeholder="email" onChange={e => setEmail(e.target.value)}></input>
                 </div>
                 <div>
-                    <input value={pass} placeholder="password" onChange={e => setPass(e.target.value)}></input>
+                    <input value={pass} placeholder="password" onChange={e => setPass(e.target.value)} type="password"></input>
                 </div>
                 <button onClick={logInHandler} id="loginBtn">login</button>
                 <p>Don't have an account? <p onClick={toggle} id="signUp">Sign Up</p></p>
@@ -78,8 +81,8 @@ function Register({changeShow}:togBtn){
         setEmail("");
         setPass("");
     }
-    const registerHandler = async() => {
-        const url = "http://localhost:8080/v1/user/createUser";
+    const registerHandler = async() => {//https://gin-production-3fb4.up.railway.app/
+        const url = "https://gin-production-3fb4.up.railway.app/v1/user/createUser";
         const regitser = {
             name: name,
             username: userName,
@@ -110,7 +113,7 @@ function Register({changeShow}:togBtn){
                 <input value={email} placeholder="email" onChange={e => setEmail(e.target.value)}></input>
             </div>
             <div>
-                <input value={pass} placeholder="password" onChange={e => setPass(e.target.value)}></input>
+                <input value={pass} placeholder="password" onChange={e => setPass(e.target.value)} type="password"></input>
             </div>
             <button onClick={registerHandler} id="loginBtn">Register</button>
             <button id="backBtn" onClick={changeShow}>back</button>

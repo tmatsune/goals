@@ -40,7 +40,7 @@ function Habit({obj, deleteHabit}:habit){
     const del = async(habitData:string) => {
         if(currentUser){
             const delBody = {habitdata: habitData, user_id: currentUser.id}
-            const url = "http://localhost:8080/v1/habit/deleteHabit";
+            const url = "https://gin-production-3fb4.up.railway.app/v1/habit/deleteHabit";
             const res = await fetch(url, {
                 method:"post",
                 headers:{

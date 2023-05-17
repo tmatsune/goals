@@ -34,8 +34,9 @@ function Node({hours, goalTime, currMonth, currDay}:userGoals){
         setVal(num);
     }
     const changeDate = async() => {
-        const url = 'http://localhost:8080/v1/goal/hoursStudied';
+        const url = 'https://gin-production-3fb4.up.railway.app/v1/goal/hoursStudied';
         var month = GetMonth(currMonth);
+        setHour(Number(val));
         const res = await fetch(url, {
             method:"post", 
             headers: {
@@ -48,7 +49,7 @@ function Node({hours, goalTime, currMonth, currDay}:userGoals){
                 user_id: currentUser?.id
             })
         }).then(res => res.json())
-        setHour(Number(val));
+        console.log(res);
         setVal(0)
     }
     useEffect(() => {

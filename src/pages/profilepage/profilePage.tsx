@@ -29,7 +29,7 @@ function ProfilePage(){//<div id="sprite" style={{backgroundImage:`url(${USER})`
 
     const changeTheme = async(nwColor:number[]) => {
         if(currentUser){
-            const url = 'http://localhost:8080/v1/user/updateRgb';
+            const url = 'https://gin-production-3fb4.up.railway.app/v1/user/updateRgb';
             const reqBody = {
                 rcolors: Number(currentUser.rgb),
                 user_id: Number(nwColor)
@@ -84,7 +84,7 @@ function ProfilePage(){//<div id="sprite" style={{backgroundImage:`url(${USER})`
     }
     const changeDbAvatar = async(num:number) => {
         if(currentUser){
-            const url = "http://localhost:8080/v1/user/updateAvatar"
+            const url = "https://gin-production-3fb4.up.railway.app/v1/user/updateAvatar"
             const reqBody = {
                 avatar: Number(num),
                 email: currentUser.email
@@ -103,7 +103,7 @@ function ProfilePage(){//<div id="sprite" style={{backgroundImage:`url(${USER})`
     const getHabits = async() => {
         console.log("re render")
         if(currentUser){
-            const url = `http://localhost:8080/v1/habit/getAllHabits/${currentUser.id}`;
+            const url = `https://gin-production-3fb4.up.railway.app/v1/habit/getAllHabits/${currentUser.id}`;
             const res = await fetch(url, {
                 method: "get",
                 headers: {
@@ -121,7 +121,7 @@ function ProfilePage(){//<div id="sprite" style={{backgroundImage:`url(${USER})`
     }, [currentUser])
 
     const upDbGoal = async() => {
-        const url = "http://localhost:8080/v1/goal/changeGoal";
+        const url = "https://gin-production-3fb4.up.railway.app/v1/goal/changeGoal";
         const res = await fetch(url, {
             method:"post",
             headers:{

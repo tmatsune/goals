@@ -3,7 +3,7 @@ export const get = () => {
 }
     /*
     const changeColor = async(r:number, g:number, b:number) => {
-        const url = "http://localhost:8080/v1/user/updateRgb";
+        const url = "https://gin-production-3fb4.up.railway.app/v1/user/updateRgb";
         const rgbs = [r, g, b]
         const res = await fetch(url, {
             method:"post",

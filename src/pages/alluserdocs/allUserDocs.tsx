@@ -22,7 +22,7 @@ function CurrUserDocs(){
 
     const getCurrUserDocs = async() => {
         setLoading(true);
-        const url = `http://localhost:8080/v1/docs/getAllUserDoc/${currentUser?.id}`;
+        const url = `https://gin-production-3fb4.up.railway.app/v1/docs/getAllUserDoc/${currentUser?.id}`;
         const res = await fetch(url, {
             method: "get",
             headers: {
@@ -40,7 +40,7 @@ function CurrUserDocs(){
     }, [currentUser])
 
     const createDoc = async() => {
-        const url = "http://localhost:8080/v1/docs/createUserDoc";
+        const url = "https://gin-production-3fb4.up.railway.app/v1/docs/createUserDoc";
         const res = await fetch(url, {
             method: "post",
             headers: {
