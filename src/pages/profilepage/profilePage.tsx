@@ -29,7 +29,7 @@ function ProfilePage(){//<div id="sprite" style={{backgroundImage:`url(${USER})`
 
     const changeTheme = async(nwColor:number[]) => {
         if(currentUser){
-            const url = 'https://gin-production-3fb4.up.railway.app/v1/v1/user/updateRgb';
+            const url = 'https://gin-production-3fb4.up.railway.app/v1/user/updateRgb';
             const reqBody = {
                 rcolors: Number(currentUser.rgb),
                 user_id: Number(nwColor)

@@ -31,7 +31,7 @@ function HomePage(){//<img alt="" src={BLUE} id="blue"></img>
         <div id="homeMain">
             <div id="homeContainer">
                 <h1>STOIGOAL</h1>
-        
+
                 <p id="titleP">The best web app for tracking your progress <br></br>and keeping you on track</p>
                 <span id="getStarted" onClick={goToLog}>Get Started</span>
 
@@ -81,6 +81,8 @@ function HomePage(){//<img alt="" src={BLUE} id="blue"></img>
                 <div id="curve"></div>
             </div>
             <div id="homeContainer4">
+                <div></div>
+                <div></div>
                 <div></div>
             </div>
         </div>
